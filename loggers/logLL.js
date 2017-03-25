@@ -1,5 +1,5 @@
 //Singly LinkedLists
-var LinkedList = require('../lib/LinkedList'),
+const LinkedList = require('../lib/LinkedList'),
     logger = require('../logger');
  
 var ll = new LinkedList();
