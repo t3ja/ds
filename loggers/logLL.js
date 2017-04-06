@@ -10,7 +10,10 @@ logger.info('Putting 6 in the LL at index: ', ll.put(6));
 logger.info('Putting 8 in the LL at index: ', ll.put(8));
 logger.info('Putting 10 in the LL at index: ', ll.put(10));
 logger.info('LinkedList after put - ', JSON.stringify(ll));
- 
+
+// var reverseN = ll.reverseN(ll._head, 2, 4);
+// logger.info('LinkedList after reverseN - ', JSON.stringify(reverseN));
+
 logger.info('Retrieving from LL:');
 logger.info('Retrieving 0 - ', ll.get(0));
 logger.info('Retrieving 1 - ', ll.get(1));
@@ -27,12 +30,14 @@ logger.info('Reversed LinkedList - ', JSON.stringify(ll.reverse()));
  
 logger.info('Retrieving 3rd from behind - ', JSON.stringify(ll.getFromBehind(3)));
 logger.info('Is Palindrome ? ', JSON.stringify(ll.isPalindrome()));
+logger.info('Is palindrome recursive' , ll.isPalindromeRecursive(ll._head, ll._head));
 logger.info('Putting 3 in the LL: ', ll.put(3));
 logger.info('Putting 4 in the LL: ', ll.put(4));
 logger.info('Putting 6 in the LL: ', ll.put(6));
 logger.info('Putting 8 in the LL: ', ll.put(8));
 logger.info('LinkedList after making it palindrome :) - ', JSON.stringify(ll));
 logger.info('Is Palindrome now ? ', JSON.stringify(ll.isPalindrome()));
+logger.info('Is palindrome recursive ? ' , ll.isPalindromeRecursive(ll._head, ll._head));
 logger.info('Print alternates twice - ', ll.printAlternateTwice(ll._head.next));
 logger.info('Is loop ? ', ll.isLoop());
 ll._head.next.next.next.next.next.next = ll._head.next.next;
